@@ -1,0 +1,46 @@
+.customers{
+    width: 80%;
+}
+
+.tableContainer{
+    width: 100%;
+}
+
+.table{
+    width: 100%;
+    padding: 1rem 2rem;
+    text-align: center;
+    
+}
+
+.tr{
+    background-color: var(--white);
+
+    
+}
+
+.btnNewCustomer{
+    padding: 0 2rem ;
+   
+    
+}
+
+.btnNewCustomer a{
+    padding: 1.5rem 2rem ;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--white);
+   background-color: green;
+    font-family: bold;
+    text-transform: uppercase;
+    
+}
+
+.btnNewCustomer a:hover{
+    background-color: rgb(99, 193, 99);
+    transition: all ease-in-out 300ms;
+}
+
+
+

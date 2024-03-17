@@ -1,0 +1,55 @@
+.formulario{
+    width: 50%;
+    padding: 4rem 4rem;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+
+    
+
+}
+
+.contenedor{
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   
+  
+}
+
+.input{
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #e1e1e1;
+    border-radius: 0.8rem;
+    margin-bottom: 2rem;
+    
+
+}
+
+.select{
+    width: 20rem;
+    padding: 1rem;
+    border: 1px solid #e1e1e1;
+    border-radius: 0.8rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    
+
+}
+
+.btnAdd{
+    padding: 1rem 0 ;
+    border-radius: 0.5rem;
+    background-color: var(--primary);
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+   
+}

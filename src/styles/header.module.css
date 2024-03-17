@@ -1,0 +1,52 @@
+
+
+.header{
+    width: 250px;
+    background-color: rgb(18, 77, 77);
+    height: 100vh ;
+    background-color: var(--primary);
+   
+}
+
+.logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 250px 100%;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 3rem;
+    padding: 2rem 0;
+    gap: 3.5rem;
+    
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    width: 100%;
+
+}
+
+.menu a:hover{
+    background-color: #4872a9;
+    transition: all ease-in-out 300ms;
+}
+
+.hover{
+    background-color: #4872a9;
+    transition: all ease-in-out 300ms;
+}
