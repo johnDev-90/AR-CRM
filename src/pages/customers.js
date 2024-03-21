@@ -2,10 +2,37 @@ import React from 'react'
 import Layout from '../../components/Layout'
 import style from "../styles/customers.module.css"
 import Link from 'next/link'
+import Customer from '../../components/customer'
+import { useEffect, useState } from 'react'
 
-const customers = ({customersArray}) => {
 
-    console.log(customersArray)
+const customers = ({customersArray }) => {
+    const [customerList, setCustomerList] = useState([])
+
+    useEffect(() => {
+        getCustomers();
+
+    },[])
+
+    console.log(customerList)
+
+    async function getCustomers(){
+        const url = 'http://localhost:1337/api/customers'
+         try {
+           const respuesta = await fetch(url);
+           const list = await respuesta.json();
+ 
+           setCustomerList(list.data);
+       
+           
+         } catch (error) {
+           console.log(error)
+           
+         }
+      }
+   
+
+    
   return (
    <Layout
    title={'Customer list'}
@@ -24,27 +51,23 @@ const customers = ({customersArray}) => {
                         <th>Name</th>
                         <th>Email</th>
                         <th>Phone</th>
-                        <th>Customer since</th>
                         <th>Address</th>
                     </tr>
                 </thead>
 
-                <tbody>
-                    <tr className={style.tr}>
-                        <td>Prime global solutions, inc</td>
-                        <td>ar@pgs360.com</td> 
-                        <td>287-258-2023</td>
-                        <td>16/3/2019</td>
-                        <td>Mejicanos, Sansalvador</td>
-                    </tr>
-                    <tr className={style.tr}>
-                        <td>Prime global solutions, inc</td>
-                        <td>ar@pgs360.com</td> 
-                        <td>287-258-2023</td>
-                        <td>16/3/2019</td>
-                        <td>Mejicanos, Sansalvador</td>
+                <tbody className={style.tbody}>
+                  {customerList?.map(items => (
+         
+                   
+                    <Customer
+                    key={items.id}
+                    items = {items}
+                    />
 
-                    </tr>
+            
+                   
+                  ))}
+                    
                 </tbody>
             </table>
         </div>
@@ -56,5 +79,26 @@ const customers = ({customersArray}) => {
    </Layout>
   )
 }
+
+// export async function getServerSideProps(){
+
+//     const url = 'http://localhost:1337/api/customers'
+   
+    
+//         const response = await fetch(url)
+//         const entrada = await response.json()
+
+//         return{
+//             props:{
+//                 entrada,
+//             }
+//         }
+       
+   
+    
+
+
+   
+// }
 
 export default customers

@@ -3,6 +3,9 @@ import styles from "../styles/form.module.css"
 import Link from "next/link"
 import { useState } from "react"
 import customers from "./customers"
+import { generarID } from "@/helpers"
+
+
 
 const newCustomer = ({setCustomersArray, customersArray}) => {
 
@@ -12,20 +15,23 @@ const newCustomer = ({setCustomersArray, customersArray}) => {
   const [address, setAddress] = useState('')
   const [terms, setTerms] = useState()
 
- 
+  const currentDate = new Date();
+  const currentDateString = currentDate.toISOString().split('T')[0];
  
 function handleSubmit(e){
   e.preventDefault();
   
+  
 
- const customer = {name,email,phone,address,terms}
+ const customer = {name, email,phone,address, terms, currentDateString}
+
  if (Object.values(customer).includes("")){
   console.log('Campos vacios');
   return;
   
  }
 
- setCustomersArray([...customersArray,customer]);
+ setCustomersArray([...customersArray, customer])
 
 }
   
