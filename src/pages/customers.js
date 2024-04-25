@@ -6,27 +6,40 @@ import Customer from '../../components/customer'
 import { useEffect, useState } from 'react'
 
 
+
+
+
 const customers = ({customersArray }) => {
     const [customerList, setCustomerList] = useState([])
+
+
 
     useEffect(() => {
         getCustomers();
 
     },[])
 
-    console.log(customerList)
+
+
+    
 
     async function getCustomers(){
-        const url = 'http://localhost:1337/api/customers'
+      const url = `http://localhost:1337/api/customers?populate=*`;
+
+      console.log(url)
+
+  
          try {
            const respuesta = await fetch(url);
            const list = await respuesta.json();
  
            setCustomerList(list.data);
+           console.log(list.data)
        
            
          } catch (error) {
            console.log(error)
+           
            
          }
       }
@@ -46,7 +59,7 @@ const customers = ({customersArray }) => {
 
         <div className={style.tableContainer}>
             <table className={style.table}>
-                <thead>
+                <thead className={style.thead}>
                     <tr>
                         <th>Name</th>
                         <th>Email</th>
@@ -80,25 +93,6 @@ const customers = ({customersArray }) => {
   )
 }
 
-// export async function getServerSideProps(){
 
-//     const url = 'http://localhost:1337/api/customers'
-   
-    
-//         const response = await fetch(url)
-//         const entrada = await response.json()
-
-//         return{
-//             props:{
-//                 entrada,
-//             }
-//         }
-       
-   
-    
-
-
-   
-// }
 
 export default customers

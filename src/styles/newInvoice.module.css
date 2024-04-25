@@ -1,0 +1,573 @@
+.grid_1{
+    width: 80%;
+    height: 50%;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+   
+    
+ 
+  
+   
+
+
+}
+
+
+
+
+.contenido_left{
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2rem;
+
+}
+
+.select{
+    width: 30rem;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    font-weight: bold;
+    border: 3px solid #6680a1;
+    color: #6680a1;
+
+}
+
+
+.title{
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.inviceNumnber{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--primary);
+    font-size: 2rem;
+}
+
+.label{
+    color: #6680a1;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 2rem;
+    font-size: 1.8rem;
+
+}
+
+.number{
+    font-size: 2.3rem;
+    font-weight: 900;
+}
+
+.pdf{
+    display: flex;
+    padding: 1rem 1.5rem;
+    border-radius: 1rem;
+    justify-content: space-evenly;
+    width: 15%;
+    cursor: pointer;
+    
+}
+
+.contenido_right{
+    width: 100%;
+    padding: 0 8rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.border1{
+    border: 3px solid #6680a1 ;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    gap: 1rem;
+    scale: 1;
+}
+
+.border1 svg{
+    width: 3rem;
+}
+
+.border1:hover{
+   scale: 1.1;
+   transition: all ease-in-out 300ms;
+    
+    
+}
+
+.border2:hover{
+    scale: 1.1;
+    transition: all ease-in-out 300ms;
+     
+     
+ }
+
+
+.border2{
+    border: 3px solid #6680a1 ;
+    padding: 1rem ;
+    border-radius: 1rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.border2 svg{
+    width: 3rem;
+}
+
+.send{
+    color: #6680a1;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.btnCancel{
+    width: 15rem;
+    padding: 1rem;
+    background-color: #6680a1;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2rem;
+    border: none;
+    border-radius: 0.5rem;
+    scale: 1;
+
+}
+
+.btnCancel:hover{
+    scale: 1.1;
+    transition: all ease-in-out 300ms;
+    cursor: pointer;
+
+}
+
+.btnContainer{
+    padding-right: 3rem;
+}
+
+.form{
+    width: 100%;
+    
+    margin: 0 auto;
+    padding: 2rem 4rem;
+    margin-top: 5rem;
+}
+
+.cajasContainer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+    
+}
+
+
+.caja1{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    gap: 2rem;
+    border: 1px solid #6680a1;
+    border-radius: 1rem;
+    padding: 4rem 3rem;
+}
+
+.caja2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    gap: 2rem;
+    border: 1px solid #6680a1;
+    border-radius: 1rem;
+    padding: 4rem 3rem;
+
+}
+
+.caja2 input{
+
+    width: 50%;
+    color: #6680a1;
+    padding: 1rem 2rem;
+    border: 1px solid #6680a1;
+    border-radius: 1rem;
+    text-align: center;
+    font-size: 2rem;
+
+}
+
+.divInput2{
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.divInput2 label{
+    color: #6680a1;
+    font-weight: bold;
+    font-size: 2rem;
+    width: 100%;
+}
+
+
+.divInput{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.caja1 svg{
+    width: 4rem;
+    color: #6680a1;
+    
+    
+}
+
+
+.caja1 input{
+    width: 100%;
+    color: #6680a1;
+    padding: 1rem 2rem;
+    border: 1px solid #6680a1;
+    border-radius: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    
+    
+}
+
+.caja3{
+    background-color: white;
+    width: 100%;
+    height: auto;
+    grid-column: 1/3;
+    border: 1px solid #6680a1;
+    border-radius: 1rem;
+    padding: 4rem 3rem;
+    display: flex;
+    
+
+    
+}
+
+.inputCOntainer{
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.inputCuantity input{
+    width: 10rem;
+    border: 1px solid #6680a1;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    
+   
+}
+
+.inputTitle input{
+    width: 50rem;
+    border: 1px solid #6680a1;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+
+}
+
+.inputAmount input{
+    width: 10rem;
+    border: 1px solid #6680a1;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+
+
+.inputCuantity , .inputTitle, .inputAmount{
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.labels {
+    color: #6680a1;
+    font-size: 2rem;
+   
+}
+
+.subtotal{
+    width: 20rem;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.subtotal p{
+    color: #6680a1;
+    font-size: 2rem;
+    text-transform: uppercase;
+    line-height: 0;
+    padding: 1rem 0;
+    
+}
+
+
+
+.close {
+   display: flex;
+ align-items: center;
+}
+
+
+.close svg{
+    width: 3rem;
+    cursor: pointer;
+    color: red;
+}
+
+.btnContaner{
+    display: flex;
+    gap: 2rem;
+}
+
+.btnInvoice{
+    padding: 1rem;
+    border: none;
+    background-color: #6680a1;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.8rem;
+    width: 20rem;
+    scale: 1;
+    
+}
+
+.buttonDisabled {
+    pointer-events: none;
+    opacity: 0.5; 
+    cursor: not-allowed;
+    filter: grayscale(100%);
+
+    padding: 1rem;
+    border: none;
+    background-color: #6680a1;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.8rem;
+    width: 20rem;
+    scale: 1;
+  }
+
+
+.btnInvoice:hover{
+
+    transition: all ease-in-out 300ms;
+    cursor: pointer;
+}
+
+.table{
+    width: 100%;
+    
+    text-align: center;
+}
+
+.quantity input{
+    padding: 1rem;
+    width: 10rem;
+    border: 1px solid #6680a1;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.description input{
+
+    padding: 1rem;
+    width: 40rem;
+    border: 1px solid #6680a1;
+    border-radius: 1rem;
+    text-align: center;
+
+}
+
+.amount input{
+
+    padding: 1rem;
+    width: 25rem;
+    border: 1px solid #6680a1;
+    border-radius: 1rem;
+    text-align: center;
+
+}
+
+.subtotal{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    text-align: right;
+}
+
+.subtotal{
+   color: #6680a1;
+   width: 100%;
+   font-weight: 900;
+   font-size: 2rem;
+   text-align: center;
+   
+   
+    
+}
+
+
+
+.closeTag{
+    color: red;
+    font-weight: bold;
+    width: 2.5rem;
+    cursor: pointer;
+    font-size: 1.8rem;
+    border: 3px solid red;
+    border-radius: 50%;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+}
+
+.subtotal p{
+    color: red;
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+
+
+.divInput2 .redBorder{
+    border: 3px solid red;
+}
+
+.caja3.redBorder2 {
+    border: 3px solid red;
+}
+
+.alert {
+    background-color: #f44336;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+   
+    
+  }
+
+  .success{
+    background-color: green;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+
+  }
+
+  .details{
+    text-transform: uppercase;
+    line-height: 0;
+    font-size: 2rem;
+    color: #6680a1;
+  }
+
+  .modal{
+    
+    
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    opacity: 0.8;
+    z-index: 999;
+    position: fixed;
+    top: 50%; 
+    left: 50%;
+    padding: 4rem 3rem;
+    width: 50rem;
+    border-radius: 1rem;
+    
+    
+  }
+
+  .modal p{
+    color: white;
+    text-transform: uppercase;
+    font-size: 2rem;
+    
+  }
+
+  .check svg{
+    width: 10rem;
+    color: green;
+  }
+
+  .loader {
+    width: 5rem;
+    height: 5rem;
+    border: 5px solid black;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+    top: 50%; 
+    left: 50%;
+    position: fixed;
+    }
+
+    @keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

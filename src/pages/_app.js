@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 export default function App({ Component, pageProps }) {
   const [customersArray , setCustomersArray] = useState([]);
 
+  console.log(customersArray)
+
 
   const [name, setName] = useState('')
   const [phone, setPhone] = useState('')
@@ -11,6 +13,10 @@ export default function App({ Component, pageProps }) {
   const [phisycalAddress, setAddress] = useState('')
   const [date, setDate] = useState('')
   const [terms, setTerms] = useState(0)
+
+
+
+
 
 
   useEffect(() => {
@@ -33,9 +39,9 @@ export default function App({ Component, pageProps }) {
 
      async function consultarAPI(){
 
-  
+      const url = `${process.env.API_URL}/customers`;
 
-      const url = 'http://localhost:1337/api/customers';
+     
       const response = await fetch(url, {
         method:'POST',
         headers:{
@@ -60,20 +66,14 @@ export default function App({ Component, pageProps }) {
       const respuesta = await response.json()
       console.log(respuesta)
 
-     
-
 
      }
 
-    
-   
-  
 
-
-  
   return <Component {...pageProps}
   customersArray = {customersArray}
   setCustomersArray = {setCustomersArray}
+
 
   
   />;
