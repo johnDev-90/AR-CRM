@@ -4,6 +4,7 @@
     width: 250px;
     background-color: rgb(18, 77, 77);
     height: 100vh ;
+    min-height: 100%;
     background-color: var(--primary);
    
 }
@@ -18,7 +19,7 @@
 .grid{
     display: grid;
     width: 100%;
-    grid-template-columns: 250px 80%;
+    grid-template-columns: 250px 100%;
     justify-content: space-between;
 
     
@@ -55,3 +56,89 @@
     background-color: #4872a9;
     transition: all ease-in-out 300ms;
 }
+
+.newButton{
+    padding: 1rem 2rem;
+    width: 20rem;
+    margin-left: 2rem;
+    border: none;
+    background-color:#80afeb;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.ul{
+    background-color: white;
+    width: 30rem;
+    height: 40rem;
+    z-index: 999;
+    position: fixed;
+    top: 7%;
+    left: 5%;
+    list-style: none;
+    font-size: 1..6rem;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  
+    
+
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.57);
+box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.57);
+}
+
+.ul li{
+
+    width: 15rem;
+    cursor: pointer;
+   
+    
+
+}
+
+.ul li:hover{
+    color: #4872a9;
+    font-weight: bold;
+    
+
+}
+
+.hiddeMenu {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 300ms ease-out, transform 200ms ease-out;
+    visibility: hidden;
+}
+
+.showMenu {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 300ms ease-out, transform 200ms ease-out;
+}
+
+.closes{
+    display: flex;
+    position: absolute;
+    left: 90%;
+    top: 0%;
+    line-height: normal;
+    font-weight: bold;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.ul p:hover{
+    color: red;
+    
+    
+
+}
+
+.resetAll {
+    all: unset;
+}
+

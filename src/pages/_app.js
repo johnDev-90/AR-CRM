@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 export default function App({ Component, pageProps }) {
   const [customersArray , setCustomersArray] = useState([]);
 
-  console.log(customersArray)
+
 
 
   const [name, setName] = useState('')
@@ -39,7 +39,7 @@ export default function App({ Component, pageProps }) {
 
      async function consultarAPI(){
 
-      const url = `${process.env.API_URL}/customers`;
+      const url = `http://localhost:1337/api/customers?populate=*`;
 
      
       const response = await fetch(url, {
@@ -64,7 +64,7 @@ export default function App({ Component, pageProps }) {
       })
 
       const respuesta = await response.json()
-      console.log(respuesta)
+
 
 
      }

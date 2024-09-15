@@ -1,0 +1,134 @@
+
+.agingContainer{
+    
+    width: 100%;
+    
+}
+
+.subContainer{
+   
+    width: 60%;
+    background-color: white;
+    margin-left: 33rem;
+    padding: 2rem 1rem;
+    margin-top: 5rem;
+}
+
+.subContainer2{
+   
+    width: 60%;
+    background-color: white;
+    margin-left: 33rem;
+    padding: 2rem 1rem;
+    margin-top: 5rem;
+}
+
+.subContainer2 h2{
+    text-align: center;
+}
+
+.headers{
+    border-bottom: 1px solid #e1e1e1;
+    display: flex;
+    width: 100%;
+
+    font-weight: 900;
+    justify-content: space-around;
+    font-size: 2rem;
+    line-height: 0;
+    text-align: justify;
+}
+
+.headers p{
+    width: 100%;
+    text-align: justify;
+  
+}
+
+.headersDetails{
+    border-bottom: 1px solid #e1e1e1;
+    display: flex;
+    width: 100%;
+
+    font-weight: 900;
+    justify-content: space-around;
+    font-size: 1.8rem;
+    line-height: 0;
+    
+
+}
+
+.headersDetails p{
+    
+    text-align: center;
+    background-color: aqua;
+    
+    
+}
+
+.dataRow{
+    
+    display: flex;
+    width: 100%;
+  
+    justify-content: space-around;
+    font-size: 1.8rem;
+    line-height: 0;
+    text-align: justify;
+}
+
+.dataRow2{
+    
+    display: flex;
+    width: 100%;
+   
+    justify-content: space-around;
+    font-size: 1.5rem;
+    line-height: 0;
+    text-align: center;
+}
+
+.dataRow2 p{
+    width: 20rem;
+    background-color: aquamarine;
+    
+    
+
+}
+
+
+.dataRow p{
+    width: 100%;
+    text-align: justify;
+   
+
+}
+
+.subContainer h2{
+    text-align: center;
+    font-size: 2.3rem;
+
+}
+
+.totalsRow{
+   border-top: 1px solid #e1e1e1;
+    margin-top: 1rem;
+    display: flex;
+    width: 100%;
+  
+    justify-content: space-around;
+    font-size: 1.8rem;
+    line-height: 0;
+    text-align: justify;
+}
+
+.totalsRow p{
+    width: 100%;
+    text-align: justify;
+    font-weight: bold;
+   
+
+}
+
+
+

@@ -1,0 +1,467 @@
+
+.closeBtnDiv{
+font-size: 4rem;
+width: 100%;
+display: flex;
+justify-content: space-between;
+
+align-items: center;
+
+
+
+}
+
+.closeBtnDiv h2{
+    line-height: normal;
+    font-size: 3rem;
+    padding: 0 10rem;
+
+}
+
+.closeBtnDiv p{
+
+    cursor: pointer;
+    margin-right: 5rem;
+ 
+
+
+}
+
+
+
+.closeBtnDiv p:hover{
+
+    font-weight: bold;
+
+}
+
+
+
+
+.PaymentsForm {
+    width: 100%;
+    z-index: 999;
+    position: fixed;
+    background-color: var(--secondary);
+    height: 100%;
+    transition: opacity 300ms ease-out, transform 200ms ease-out; /* Added transition */
+    margin-top: 0%;
+    overflow-y: scroll;
+    transform: translateY(-100%);
+  }
+
+
+
+ 
+  
+  .showForm {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .hiddeForm {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  .formulario{
+    width:90%;
+    
+    padding: 1rem 2rem;
+    margin: 0 auto;
+    height: auto;
+    border: 1px solid #e1e1e1;
+    background-color: white;
+    
+    
+  }
+
+  .selectInput{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 2rem 3rem;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .selectInput select{
+    width: 40rem;
+    text-align: center;
+    padding: 1.4rem 0.5rem;
+    border: 1px solid #e1e1e1;
+    border-radius: 0.5rem;
+    font-size: 1.8rem;
+   color:#8d9096;
+   
+  }
+
+  .selectInput input{
+    width: 40rem;
+    text-align: center;
+    padding: 1.4rem 0.5rem;
+    border: 1px solid #e1e1e1;
+    border-radius: 0.5rem;
+    font-size: 1.8rem;
+   color:#8d9096;
+  }
+
+  .dateinput{
+    display: flex;
+    flex-direction: column;
+    color:#8d9096;
+    
+    
+  }
+
+  .dateinput ::placeholder{
+    color:#8d9096;
+  }
+
+  .dateinput label{
+    color: #8d9096;
+    font-size: 1.8rem;
+    font-weight: bold;
+
+  }
+
+  .contendor1{
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+   
+    padding: 0 3rem;
+
+
+  }
+
+  .selectInput{
+    width: 100%;
+  
+    height: 45rem;
+    
+
+  }
+
+  .section2{
+    width: 100%;
+    height: 45rem;
+
+    
+   
+    
+  }
+
+  .inputSection2{
+    padding: 1rem 3rem;
+     height: 45rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .paymentInput{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inputSection2 p{
+    font-size: 5rem;
+    font-weight: 500;
+    line-height: 0;
+
+  }
+
+  .inputSection2 span{
+    font-weight:500;
+
+  }
+
+
+  .paymentInput input{
+    width: 40rem;
+    text-align: center;
+    padding: 1.4rem 0.5rem;
+    border: 1px solid #e1e1e1;
+    border-radius: 0.5rem;
+    font-size: 2.5rem;
+   color:#8d9096;
+   margin-bottom: 2.8rem;
+  }
+
+  .paymentInput label{
+    color: #8d9096;
+    font-size: 1.8rem;
+    font-weight: bold;
+
+  }
+
+  .submitBtn{
+    width: 15rem;
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .submitBtn input{
+    padding: 1rem 2rem;
+    width: 15rem;
+    font-size: 1.8rem;
+    
+    border: none;
+    color: white;
+    font-weight: bold;
+  
+    background-color: green;
+    border-radius: 0.5rem;
+    cursor: pointer;
+
+
+  }
+
+  .submitBtn input:hover{
+
+    background-color: rgb(2, 73, 2);
+    transition: ease-in-out 300ms;
+  
+
+
+  }
+
+  .invoicesSection{
+    width: 100%;
+    height: auto;
+    margin-top: 3rem;
+ 
+    
+    
+  }
+
+  .invociesContainers{
+    margin-top: 3rem;
+    background-color: white;
+    width: 90%;
+    height: 100%;
+    margin: 2rem auto;
+    border: 1px solid #e1e1e1;
+    padding: 2rem 0;
+       
+  }
+
+  .invoicesContainer{
+    width: 100%;
+   
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .invoicesData{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+ 
+    
+  }
+
+  .invoicesHeader{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color: var(--primary);
+    color: white;
+
+  }
+
+  .invoicesHeader p{
+    line-height: normal;
+    font-size: 1.8rem;
+    width: 20rem;
+    font-weight: bold;
+
+  }
+
+  .invoicesData p{
+    line-height: normal;
+    font-size: 1.5rem;
+    width: 20rem;
+    font-weight: 500;
+  }
+
+ 
+
+  .checkBoxDiv{
+    width: 2rem;
+    height: 2rem;
+    
+  }
+
+  .checkBoxDiv .check{
+    width: 100%;
+    height: 100%;
+
+  }
+
+  .invoicesData .paymentAmount{
+    
+    width: 20rem;
+    text-align: center;
+    padding: 1.4rem 0.5rem;
+    border: 1px solid #e1e1e1;
+    border-radius: 0.5rem;
+    font-size: 1.8rem;
+   color:#8d9096;
+  }
+
+  .invoicesNotfound{
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  
+
+  .paymentFooter{
+    width: 100%;
+    height: auto;
+   border-top: 1px solid #e1e1e1;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 2rem;
+  }
+
+ 
+
+  .creditamount{
+    display: flex;
+    flex-direction: column;
+  
+  }
+
+  .creditamount p{
+    font-weight: bold;
+    font-size: 1.7rem;
+    line-height: 0;
+
+ 
+  
+  }
+
+  .creditamount span{
+    width: 10rem;
+    font-weight: 500;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: normal;
+    
+
+  }
+
+  .appliedP p{
+    width: 10rem;
+    font-weight: 500;
+   text-align: center;
+   
+  }
+
+  .creditP p{
+    width: 10rem;
+    font-weight: 500;
+    text-align: center;
+   
+
+  }
+
+  
+
+  .appliedP{
+    display: flex;
+    width: 29rem;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    
+
+  }
+
+  .creditP{
+   text-align: center;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   width: 29rem;
+   margin: 0;
+    padding: 0;
+  }
+
+  .btnsPayment{
+    display: flex;
+    gap: 2rem;
+    
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .clearBtn{
+    width: 15rem;
+    padding: 1rem 3rem;
+    display: flex;
+    
+    justify-content: flex-end;
+  }
+
+
+  .clearBtn input{
+    padding: 1rem 2rem;
+    width: 15rem;
+    font-size: 1.8rem;
+    border: none;
+    color: white;
+    font-weight: bold;
+    
+    background-color: #8d9096;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+
+  .clearBtn input:hover{
+    background-color: #7e7f81;
+    transition: ease-in-out 300ms;
+  }
+
+  .hide{
+    display: none;
+  }
+
+  .redBorder{
+    border: 2px solid red;
+  }
+
+ 
+
+
+
+
+  
+
+
+  
+
+  
+
+ 
+
+
+
+
+ 

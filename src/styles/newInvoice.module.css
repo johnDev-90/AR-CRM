@@ -32,8 +32,10 @@
     border-radius: 1rem;
     text-align: center;
     font-weight: bold;
-    border: 3px solid #6680a1;
-    color: #6680a1;
+    border: 1px solid #e1e1e1;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    color:#6680a1;
 
 }
 
@@ -200,10 +202,11 @@
     width: 50%;
     color: #6680a1;
     padding: 1rem 2rem;
-    border: 1px solid #6680a1;
-    border-radius: 1rem;
-    text-align: center;
+    border: 1px solid #e1e1e1;
+    border-radius: 0.5rem;
     font-size: 2rem;
+    color:#6680a1;
+    text-align: center;
 
 }
 
@@ -226,6 +229,7 @@
 .divInput{
     display: flex;
     flex-direction: row;
+    
 }
 
 
@@ -240,12 +244,13 @@
 
 .caja1 input{
     width: 100%;
-    color: #6680a1;
+    
     padding: 1rem 2rem;
-    border: 1px solid #6680a1;
-    border-radius: 1rem;
-    text-align: center;
+    border: 1px solid #e1e1e1;
+    border-radius: 0.5rem;
     font-size: 2rem;
+    color:#6680a1;
+    text-align: center;
     
     
 }
@@ -397,8 +402,10 @@
 .quantity input{
     padding: 1rem;
     width: 10rem;
-    border: 1px solid #6680a1;
-    border-radius: 1rem;
+    border: 1px solid #e1e1e1;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    color:#6680a1;
     text-align: center;
 }
 
@@ -406,8 +413,10 @@
 
     padding: 1rem;
     width: 40rem;
-    border: 1px solid #6680a1;
-    border-radius: 1rem;
+    border: 1px solid #e1e1e1;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    color:#6680a1;
     text-align: center;
 
 }
@@ -416,8 +425,10 @@
 
     padding: 1rem;
     width: 25rem;
-    border: 1px solid #6680a1;
-    border-radius: 1rem;
+    border: 1px solid #e1e1e1;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    color:#6680a1;
     text-align: center;
 
 }
@@ -509,24 +520,28 @@
   .modal{
     
     
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: white;
     text-align: center;
-    opacity: 0.8;
+    
     z-index: 999;
     position: fixed;
-    top: 50%; 
-    left: 50%;
+    top: 40%; 
+    left: 40%;
     padding: 4rem 3rem;
     width: 50rem;
     border-radius: 1rem;
+
+    -webkit-box-shadow: -2px 0px 13px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: -2px 0px 13px -1px rgba(0,0,0,0.75);
+box-shadow: -2px 0px 13px -1px rgba(0,0,0,0.75);
     
     
   }
 
   .modal p{
-    color: white;
-    text-transform: uppercase;
-    font-size: 2rem;
+    color: black;
+    
+    font-size: 1.7rem;
     
   }
 
@@ -536,27 +551,76 @@
   }
 
   .loader {
-    width: 5rem;
-    height: 5rem;
-    border: 5px solid black;
-    border-bottom-color: transparent;
+    width: 48px;
+    height: 48px;
     border-radius: 50%;
     display: inline-block;
+    border-top: 4px solid var(--primary);
+    border-right: 4px solid transparent;
     box-sizing: border-box;
     animation: rotation 1s linear infinite;
-    top: 50%; 
+    top: 50%;
     left: 50%;
     position: fixed;
-    }
-
-    @keyframes rotation {
+  
+  }
+  .loader::after {
+    content: '';  
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border-bottom: 4px solid #FF3D00;
+    border-left: 4px solid transparent;
+  }
+  @keyframes rotation {
     0% {
-        transform: rotate(0deg);
+      transform: rotate(0deg);
     }
     100% {
-        transform: rotate(360deg);
+      transform: rotate(360deg);
     }
-    } 
+  } 
+  
+
+    .modalContainer{
+        width: 90%;
+        height: 100%;
+        background-color: rgb(243 244 246);
+        color: black;
+        padding: 5rem;
+        z-index: 100;
+        position: fixed;
+        
+        
+    }
+
+    .divModal{
+        width: 100%;
+        
+        display: flex;
+        justify-content: space-around;
+      
+    }
+    .divModal input{
+        width: 20rem;
+        border: none;
+        text-align: center;
+        padding: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+        
+    }
+
+    .divModal input:hover{
+        background-color: rgb(132 204 22);
+        color: white;
+        transition: ease-in-out 300ms;
+        
+    }
 
 
 
